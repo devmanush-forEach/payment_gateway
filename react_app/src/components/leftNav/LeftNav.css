@@ -1,0 +1,46 @@
+.left_nav_main {
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  width: 200px;
+  height: 100vh;
+  background-color: #2e3345;
+  padding-top: 65px;
+}
+
+.payment_option_list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  list-style: none;
+}
+
+.payment_option_list > li {
+  height: 30px;
+  cursor: pointer;
+  border-left: 4px solid white;
+  background-color: black;
+  color: white;
+}
+
+.payment_option_list > li > .left_link {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: white;
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.rupee_icon {
+  font-size: 20px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: white;
+}

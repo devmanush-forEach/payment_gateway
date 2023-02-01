@@ -1,0 +1,46 @@
+.add_money_form_box {
+  /* height: 300px; */
+  width: 400px;
+  background-color: #292929;
+  position: relative;
+}
+
+.cross_icon {
+  position: absolute;
+  right: -24px;
+  top: -4px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.add_money_title {
+  font-size: 20px;
+  text-align: center;
+  font-style: italic;
+  border-bottom: 1px solid whitesmoke;
+  padding: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.add_money_form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.submit_btn {
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(213, 252, 252);
+  font-weight: 500;
+  outline: none;
+  border: none;
+}

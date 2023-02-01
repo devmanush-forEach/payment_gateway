@@ -1,0 +1,67 @@
+.payMoney_main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #70727b;
+  padding: 80px 20px 20px 220px;
+  display: grid;
+  place-items: center;
+}
+
+.form_section {
+  height: 50vh;
+  width: 500px;
+  color: white;
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form_section > h2 {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 1px solid white;
+  padding: 10px;
+}
+
+.payment_form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+  height: 90%;
+}
+
+.amount_section {
+  width: 400px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.to_user_name {
+  color: rgb(205, 253, 255);
+  font-size: 20px;
+}
+
+.passowrd_input {
+  height: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.payment_info {
+  text-align: center;
+  font-size: 20px;
+  color: aqua;
+}

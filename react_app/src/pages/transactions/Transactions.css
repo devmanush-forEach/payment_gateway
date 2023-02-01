@@ -1,0 +1,16 @@
+.transactions_main_box {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #70727b;
+  padding: 80px 20px 20px 220px;
+  display: grid;
+}
+
+.transaction_card_tile {
+  width: 45%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 40px;
+}

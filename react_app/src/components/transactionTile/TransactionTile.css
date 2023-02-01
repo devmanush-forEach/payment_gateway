@@ -1,0 +1,35 @@
+.transaction_tile {
+  height: 80px;
+  width: 100%;
+  min-width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* background-color: aqua; */
+}
+
+.transaction_amount {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.transaction_amount > span {
+  height: fit-content;
+  font-size: 25px;
+  padding-top: 4px;
+}
+
+.sender_info {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.dnt {
+  display: flex;
+  flex-direction: column;
+}
