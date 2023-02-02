@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import FormInput from "../../components/formInput/FormInput";
@@ -6,6 +7,8 @@ import { axiosGet, axiosPost } from "../../helpers/axiosRequests";
 import "./PayMoney.css";
 
 const PayMoney = () => {
+  const { user } = useSelector((state) => state.user);
+
   const navigate = useNavigate();
   const [data, setData] = useState({});
   const [reciever, setReciever] = useState(null);
@@ -37,6 +40,10 @@ const PayMoney = () => {
   };
 
   const handleContinue = () => {
+    if (!user) {
+      toast.error("Please Login.");
+      return;
+    }
     if (!reciever) {
       toast.error("Please Enter a valid user's number.");
       return;
@@ -57,7 +64,7 @@ const PayMoney = () => {
       toast(`Payment is Successfull with transaction id ${res.data._id} .`);
       setNext(false);
       setData({});
-      navigate("/");
+      navigate("/allTransactions");
     } else {
       toast.error(res.data.error);
     }

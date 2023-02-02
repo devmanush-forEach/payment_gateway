@@ -20,26 +20,26 @@ const FormInput = (props) => {
     setFocused(true);
   };
 
-  const now = new Date();
+  // const now = new Date();
 
-  const getMaxDate = () => {
-    const min = 725809896000;
+  // const getMaxDate = () => {
+  //   const min = 725809896000;
 
-    const nowSec = now.getTime();
-    const sec = nowSec - min;
+  //   const nowSec = now.getTime();
+  //   const sec = nowSec - min;
 
-    const maxDate = new Date(sec).toJSON().slice(0, 10);
-    return maxDate;
-  };
-  const getMinDate = () => {
-    const min = 1767189312000;
+  //   const maxDate = new Date(sec).toJSON().slice(0, 10);
+  //   return maxDate;
+  // };
+  // const getMinDate = () => {
+  //   const min = 1767189312000;
 
-    const nowSec = now.getTime();
-    const sec = nowSec - min;
+  //   const nowSec = now.getTime();
+  //   const sec = nowSec - min;
 
-    const minDate = new Date(sec).toJSON().slice(0, 10);
-    return minDate;
-  };
+  //   const minDate = new Date(sec).toJSON().slice(0, 10);
+  //   return minDate;
+  // };
 
   return (
     <div className="form_input_box">
@@ -59,8 +59,6 @@ const FormInput = (props) => {
         pattern={pattern}
         onBlur={handleFocus}
         focused={focused.toString()}
-        max={type === "date" ? getMaxDate() : max}
-        min={type === "date" ? getMinDate() : min}
       />
       <label
         id={(inputValue?.length > 0 || type === "date") && "label_up"}

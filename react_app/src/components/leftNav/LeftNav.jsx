@@ -18,14 +18,14 @@ const LeftNav = () => {
                 Pay Money
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/recieveMoney" className="left_link">
                 <span className="rupee_icon">
                   <BiRupee />
                 </span>
                 Recieve Money
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/allTransactions" className="left_link">
                 <span className="rupee_icon">
